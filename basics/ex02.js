@@ -14,11 +14,15 @@
 
 //  écrire votre code sous ce commentaire
 
+function retParam(nb) {
+    return nb;
+
+}
+console.log(retParam(5))
 /*
   Test 1
   Résultat attendu: "5"
 */
-retParam(5);
 
 /* DO NOT TOUCH */
 module.exports = {
