@@ -11,41 +11,51 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function getHumanTypeByAge(nb) {
+  if (nb >= 124 || nb < 1) {
+    return "impossible... ou encore jamais vu"
+} else if
+    (nb < 12 ) {
+    return "enfant"
+}  else if (nb >= 12 && nb < 18) {
+    return "ado"
+} else if (nb >= 18 && nb < 124) {
+    return "adulte"
+}}
 /*
   Test 1
   Résultat attendu : "impossible... ou encore jamais vu"
 */
 
-getHumanTypeByAge(-5);
+console.log(getHumanTypeByAge(-5));
 
 /*
   Test 2
   Résultat attendu : "enfant"
 */
 
-getHumanTypeByAge(6);
+console.log(getHumanTypeByAge(6));
 
 /*
   Test 3
   Résultat attendu : "ado"
 */
 
-getHumanTypeByAge(17);
+console.log(getHumanTypeByAge(17));
 
 /*
   Test 4
   Résultat attendu : "adulte"
 */
 
-getHumanTypeByAge(33);
+console.log(getHumanTypeByAge(33));
 
 /*
   Test 5
   Résultat attendu : "impossible... ou encore jamais vu"
 */
 
-getHumanTypeByAge(140);
+console.log(getHumanTypeByAge(140));
 
 /* DO NOT TOUCH */
 module.exports = {
