@@ -24,7 +24,7 @@
     "browserify": "^16.1.1",
     "jasmine": "^2.2.1",
     "jasmine-core": "^2.2.0",
-    "karma": "^0.13.2",
+    "karma": "^0.13.22",
     "karma-browserify": "^5.2.0",
     "karma-chrome-launcher": "^0.1.4",
     "karma-jasmine": "^0.3.5",
