@@ -13,6 +13,12 @@
 
 //  écrire votre code sous ce commentaire
 
+function addition(nb, nb2) {
+    return nb + nb2
+
+}
+console.log(addition(6, 9))
+
 /*
   Test 1
   Résultat attendu : 15
