@@ -13,21 +13,21 @@
 
 //  écrire votre code sous ce commentaire
 
-function shoppingList(paniers) {
+function shoppingList(Panier) {
     let objet = {};
-    for (let i = 0; i < paniers.length; i++) {
-       for (let a = 0; a < paniers[i].length; a++) {
-           if (objet.hasOwnProperty(paniers[i][a])) {
-                objet[paniers[i][a]]++;
+    for (i = 0; i < Panier.length; i++) {
+        for (j = 0; j < Panier.length - 1; j++) {
+            let fruit = Panier[i][j];
+            if (objet[fruit]) {
+                objet[fruit]++;
             }
             else {
-                objet[paniers[i][a]] = 1;
+                objet[fruit] = 1;
             }
         }
     }
-    
     return objet;
- }
+}
 /*
   Test 1
   Résultat attendu : {
@@ -41,7 +41,7 @@ function shoppingList(paniers) {
 */
 
 console.log(shoppingList([
-    ["orange", "orange", "kiwi", "ananas"],
+    ["orange", "orange","kiwi", "ananas"],
     ["kiwi", "ananas", "banane", "prune"],
     ["orange", "orange", "orange", "orange"],
     ["orange", "orange", "kiwi", "kiwi"],
