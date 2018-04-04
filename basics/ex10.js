@@ -13,6 +13,21 @@
 
 //  écrire votre code sous ce commentaire
 
+function shoppingList(paniers) {
+    let objet = {};
+    for (let i = 0; i < paniers.length; i++) {
+       for (let a = 0; a < paniers[i].length; a++) {
+           if (objet.hasOwnProperty(paniers[i][a])) {
+                objet[paniers[i][a]]++;
+            }
+            else {
+                objet[paniers[i][a]] = 1;
+            }
+        }
+    }
+    
+    return objet;
+ }
 /*
   Test 1
   Résultat attendu : {
@@ -25,13 +40,13 @@
   }
 */
 
-shoppingList([
+console.log(shoppingList([
     ["orange", "orange", "kiwi", "ananas"],
     ["kiwi", "ananas", "banane", "prune"],
     ["orange", "orange", "orange", "orange"],
     ["orange", "orange", "kiwi", "kiwi"],
     ["prune", "banane", "pamplemousse", "ananas"]
-]);
+]));
 
 /* DO NOT TOUCH */
 module.exports = {
