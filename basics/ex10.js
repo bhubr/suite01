@@ -13,7 +13,7 @@
 
 //  écrire votre code sous ce commentaire
 
-function shoppingList(Panier) {
+/*function shoppingList(Panier) {
     let objet = {};
     for (i = 0; i < Panier.length; i++) {
         for (j = 0; j < Panier.length - 1; j++) {
@@ -27,7 +27,27 @@ function shoppingList(Panier) {
         }
     }
     return objet;
+} */
+
+
+//  écrire votre code sous ce commentaire
+
+function shoppingList(listPanier) {
+    let objet = {}
+    for (let panier of listPanier) {
+        for (let fruit of panier) {
+            if(objet[fruit] === undefined) {
+                objet[fruit] = 1
+            } 
+
+        else { objet[fruit] = objet[fruit] + 1
+        }
+       } 
+    }
+    console.log(objet)
+    return objet
 }
+
 /*
   Test 1
   Résultat attendu : {
@@ -40,13 +60,13 @@ function shoppingList(Panier) {
   }
 */
 
-console.log(shoppingList([
+shoppingList([
     ["orange", "orange","kiwi", "ananas"],
     ["kiwi", "ananas", "banane", "prune"],
     ["orange", "orange", "orange", "orange"],
     ["orange", "orange", "kiwi", "kiwi"],
     ["prune", "banane", "pamplemousse", "ananas"]
-]));
+]);
 
 /* DO NOT TOUCH */
 module.exports = {
