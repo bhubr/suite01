@@ -10,6 +10,10 @@
 */
 
 //  écrire votre code sous ce commentaire
+filterEvenNumbers = array => {
+  const nbrEntiers = array.filter(nb => nb % 2 == 0)
+  console.log(nbrEntiers);
+}
 
 /*
   Test 1
