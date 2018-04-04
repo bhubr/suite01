@@ -11,20 +11,21 @@
 */
 
 //  écrire votre code sous ce commentaire
+const checkVehicles = (Array, string) => Array.includes(string);
 
 /*
   Test 1
   Résultat attendu : true
 */
 
-checkVehicles(["subaru", "volkswagen", "mercedes", "peugeot"], "mercedes");
+console.log(checkVehicles(["subaru", "volkswagen", "mercedes", "peugeot"], "mercedes"));
 
 /*
   Test 2
   Résultat attendu : false
 */
 
-checkVehicles(["suzuki", "honda", "ducati"], "bmw");
+console.log(checkVehicles(["suzuki", "honda", "ducati"], "bmw"));
 
 /* DO NOT TOUCH */
 module.exports = {
