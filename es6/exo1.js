@@ -10,11 +10,30 @@
 */
 
 //  écrire votre code sous ce commentaire
+/*const getAllLastnames = array => {
+  const lastNames = []
+    array.map(nom => {lastNames.push(nom.name)})
+    console.log(lastNames);
+return lastNames;
+} */
+const getAllLastnames = array => {
+  const lastNames = array.map(personn => {
+    if (personn.name) {
+      return personn.name;
+    } else {
+      return '' ;
+    }
+  })
+  console.log(lastNames);
+
+  return lastNames;
+}
 
 /*
   Test 1
   Résultat attendu : ["John", "Judith", "Julia"]
 */
+
 
 getAllLastnames([{name: 'John'}, {name: 'Judith'}, {name: 'Julia'}]);
 
