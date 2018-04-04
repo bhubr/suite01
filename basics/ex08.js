@@ -15,7 +15,7 @@
 
 //  écrire votre code sous ce commentaire
 function isEven(nb) {
-  if (nb%2 == 0) {
+  if (nb%2 === 0) {
     return 1
   }   else {
     return 0
@@ -24,10 +24,10 @@ function isEven(nb) {
 function isAllEven(nb) {
 let somme = 0;
  for (let i=0; i < nb.length; i++) { 
-   if ((isEven(nb[i]) == 1)){
+   if ((isEven(nb[i]) === 1)){
     somme++; 
    } }
-   if (somme == nb.length) {
+   if (somme === nb.length) {
     return 1;
    }
    else {
