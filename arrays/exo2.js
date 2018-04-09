@@ -8,6 +8,9 @@
 */
 
 //  écrire votre code sous ce commentaire
+const editArrayAt = (array, position, value) => { array[position] = value; 
+
+  console.log(array) }
 
 /*
   Test 1
