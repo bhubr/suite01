@@ -1,4 +1,4 @@
-xdescribe("Es6", () => {
+describe("Es6", () => {
 
   /* Import exercices */
   // const exo1 = require('../es6/exo1');
@@ -9,7 +9,7 @@ xdescribe("Es6", () => {
   // const exo6 = require('../es6/exo6');
   // const exo7 = require('../es6/exo7');
   // const exo8 = require('../es6/exo8');
-  // const exo9 = require('../es6/exo9');
+   const exo9 = require('../es6/exo9');
 
   /* Test Exercice 1 */
   xdescribe('Es6 - Exo 1', () => {
@@ -125,7 +125,7 @@ xdescribe("Es6", () => {
   });
 
   /* Test Exercice 8 */
-  xdescribe('Es6 - Exo 9', () => {
+  describe('Es6 - Exo 9', () => {
     it('should return "Wild Code School Bordeaux"', () => {
       const spyedFun = spyOn(Array.prototype, "sort").and.callThrough();
       expect(exo9.sortMyWords([{order: 2, word: 'Code'}, {order: 4, word: 'Bordeaux'}, {order: 1, word: 'Wild'}, {order: 3, word: 'School'}])).toEqual("Wild Code School Bordeaux");

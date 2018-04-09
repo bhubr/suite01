@@ -9,6 +9,13 @@
       str sortMyWords(_arr);
 */
 
+function sortMyWords(anArray){
+  const sortedArray = anArray.sort(function(a,b){
+    return a.order - b.order
+  })
+  return sortedArray.map(item => item.word).join(" ")
+}
+
 //  écrire votre code sous ce commentaire
 
 /*

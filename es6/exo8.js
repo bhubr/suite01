@@ -9,6 +9,15 @@
 */
 
 //  écrire votre code sous ce commentaire
+function verifyHumans(anArray){
+  function isAbove160 (int){
+    return int >= 160 
+  }
+  const humanSize = anArray.map(item => item.size.split('m').join(""))
+  return (humanSize).every(isAbove160)
+}
+
+
 
 /*
   Test 1

@@ -11,6 +11,16 @@
 */
 
 //  écrire votre code sous ce commentaire
+function searchOcc(arr, str){
+  for (item of arr){
+    if (item === str){
+      return item[i];
+    }
+    else {
+      return -1;
+    }
+  }
+}
 
 /*
   Test 1

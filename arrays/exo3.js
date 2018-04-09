@@ -9,6 +9,10 @@
 
 //  écrire votre code sous ce commentaire
 
+function editStringAt(str, pos, char) {
+  return str.replace(str[pos], char)
+}
+
 /*
   Test 1
   Résultat attendu : "Bondour"

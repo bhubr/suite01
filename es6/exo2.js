@@ -10,7 +10,13 @@
 */
 
 //  écrire votre code sous ce commentaire
+function filterEvenNumbers(anArray){
+  const isEven = nombre => nombre % 2 === 0
+  const nombresPairs = anArray.filter(isEven)
+  return nombresPairs
+}
 
+console.log(filterEvenNumbers)
 /*
   Test 1
   Résultat attendu : [2, 6, 8]
@@ -31,6 +37,7 @@ filterEvenNumbers([1, 3, 5, 7]);
 */
 
 filterEvenNumbers([0, 3, 8, 11]);
+
 
 /* DO NOT TOUCH */
 module.exports = {

@@ -11,6 +11,11 @@
 
 //  écrire votre code sous ce commentaire
 
+function joinDates(anArray, separateur){
+  const date = anArray.join(separateur)
+  return date
+}
+
 /*
   Test 1
   Résultat attendu : "18/05/2018"

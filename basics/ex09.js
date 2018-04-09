@@ -7,6 +7,24 @@
 
 //  écrire votre code sous ce commentaire
 
+
+function boostedEvenAddition(anArray){
+  let nbPairs = 0
+  for (item of anArray)
+    if (isEven(item) === 1){
+      nbPairs += item
+    }
+  return nbPairs
+}
+
+function isEven(nb){
+  if (nb % 2 === 0){
+    return 1
+  }
+  else 
+    return 0
+}
+
 /*
   Test 1
   Résultat attendu : 10

@@ -11,7 +11,10 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function checkVehicles(anArray, voiture) {
+  const check = anArray.includes(voiture)
+  return check
+}
 /*
   Test 1
   Résultat attendu : true

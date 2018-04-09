@@ -12,6 +12,10 @@
 
 //  écrire votre code sous ce commentaire
 
+function getCharAt(str, nb){
+  return (nb >= 0 && nb < str.length) ? str[nb] : " "
+}
+
 /*
   Test 1
   Résultat attendu : "j"

@@ -15,6 +15,24 @@
 
 //  écrire votre code sous ce commentaire
 
+function isAllEven(anArray){
+  let result = undefined
+  for (item of anArray){
+    if (isEven(item) === 0){
+      return 0 
+    }
+  }
+  return 1
+}
+
+function isEven(nb){
+  if (nb % 2 === 0){
+    return 1
+  }
+  else 
+    return 0
+}
+
 /*
   Test 1
   Résultat attendu : 0

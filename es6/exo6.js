@@ -10,6 +10,15 @@
 */
 
 //  écrire votre code sous ce commentaire
+function getTwoLastItems (string, separateur){
+  const listes = string.split(separateur).reverse()
+  const twoListe = `${listes [0]},${listes[1]}`
+  const lastListe = twoListe.split(',').reverse()
+  return lastListe
+}
+
+  
+
 
 /*
   Test 1
@@ -29,3 +38,4 @@ getTwoLastItems("25/02/2018", "/");
 module.exports = {
   getTwoLastItems: getTwoLastItems
 }
+''

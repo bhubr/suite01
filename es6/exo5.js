@@ -11,6 +11,13 @@
 
 //  écrire votre code sous ce commentaire
 
+function countTotalTimeSpent (anArray) {
+  let temps = anArray.reduce(
+    (accumulateur, unTruc) => accumulateur + unTruc.time,
+    0
+  )
+  return temps
+}
 /*
   Test 1
   Résultat attendu : 65

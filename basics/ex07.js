@@ -6,7 +6,13 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function boostedAddition(anArray){
+  let result = 0
+  for (item of anArray){
+    result += item
+  }
+  return result
+}
 /*
   Test 1
   Résultat attendu : 15

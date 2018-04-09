@@ -13,6 +13,21 @@
 
 //  écrire votre code sous ce commentaire
 
+function shoppingList(anArray){
+  let product = {}
+  for (item of anArray) {
+    for (nb of item){
+      if (product[nb] === undefined){
+         product[nb] = 1
+      }
+      else {
+         product[nb] += 1
+      }
+    }
+  }
+  return product
+}
+
 /*
   Test 1
   Résultat attendu : {

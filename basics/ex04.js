@@ -1,6 +1,6 @@
 /*
     Ecrire une fonction "isEven",
-    qui prend un paramètre un nombre,
+    qui prend en paramètre un nombre,
     et qui retourne un nombre:
         - 1 si le nombre est pair
         - 0 si le nombre est impair
@@ -8,6 +8,14 @@
 */
 
 //  écrire votre code sous ce commentaire
+
+function isEven(nb){
+  if (nb % 2 === 0){
+    return 1
+  }
+  else 
+    return 0
+}
 
 /*
   Test 1

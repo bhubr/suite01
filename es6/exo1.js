@@ -11,10 +11,17 @@
 
 //  écrire votre code sous ce commentaire
 
+function getAllLastnames(anArray) {
+  const myArray = anArray.map(tableau => tableau.name === undefined ? "" : tableau.name)
+  return myArray
+}
+
+
 /*
   Test 1
   Résultat attendu : ["John", "Judith", "Julia"]
 */
+
 
 getAllLastnames([{name: 'John'}, {name: 'Judith'}, {name: 'Julia'}]);
 
