@@ -10,20 +10,24 @@
 */
 
 //  écrire votre code sous ce commentaire
+const sortMyWords = (_arr) => {
+  const ordre = _arr.sort((a, b) => (a.order - b.order)).map(objet => objet.word).join(' ')
 
+  return ordre
+}
 /*
   Test 1
   Résultat attendu : "Wild Code School Bordeaux"
 */
 
-sortMyWords([{order: 2, word: 'Code'}, {order: 4, word: 'Bordeaux'}, {order: 1, word: 'Wild'}, {order: 3, word: 'School'}]);
+console.log(sortMyWords([{order: 2, word: 'Code'}, {order: 4, word: 'Bordeaux'}, {order: 1, word: 'Wild'}, {order: 3, word: 'School'}]));
 
 /*
   Test 2
   Résultat attendu : "J'adore programmer en Javascript"
 */
 
-sortMyWords([{order: 4, word: 'Javascript'}, {order: 1, word: 'J\'adore'}, {order: 3, word: 'en'}, {order: 2, word: 'programmer'}]);
+console.log(sortMyWords([{order: 4, word: 'Javascript'}, {order: 1, word: 'J\'adore'}, {order: 3, word: 'en'}, {order: 2, word: 'programmer'}]));
 
 /* DO NOT TOUCH */
 module.exports = {

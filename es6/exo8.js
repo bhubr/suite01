@@ -14,15 +14,20 @@
   Test 1
   Résultat attendu : true
 */
+const verifyHumans = (_arr) => {
+  const taille = _arr.every(m => m.size.split('m').join('') >= 160)
 
-verifyHumans([{name: 'John', size: '1m80'}, {name: 'Patrick', size: '1m75'}, {name: 'Marie', size: '1m68'}]);
+  return taille
+}
+
+console.log(verifyHumans([{name: 'John', size: '1m80'}, {name: 'Patrick', size: '1m75'}, {name: 'Marie', size: '1m68'}]));
 
 /*
   Test 2
   Résultat attendu : false
 */
 
-verifyHumans([{name: 'John', size: '1m80'}, {name: 'Nicolas', size: '1m55'}, {name: 'Marie', size: '1m68'}]);
+console.log(verifyHumans([{name: 'John', size: '1m80'}, {name: 'Nicolas', size: '1m55'}, {name: 'Marie', size: '1m68'}]));
 
 /* DO NOT TOUCH */
 module.exports = {
