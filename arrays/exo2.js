@@ -8,19 +8,22 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function editArrayAt(table, position, value) {
+  table.splice(position, 1, value)  
+  return table
+}
 /*
   Test 1
   Résultat attendu : ["bonjour", "ça", 5]
 */
 var arr1 = ["bonjour", 4, 5];
-editArrayAt(arr1, 1, "ça");
+console.log(editArrayAt(arr1, 1, "ça"));
 
 /*
   Test 2
   Résultat attendu : ["bonjour", "ça", "va?"]
 */
-editArrayAt(arr1, 2, "va?");
+console.log(editArrayAt(arr1, 2, "va?"));
 
 /* DO NOT TOUCH */
 module.exports = {

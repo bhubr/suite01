@@ -6,7 +6,13 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function boostedAddition(table) {
+  let addition = 0
+  for(i = 0; i < table.length; i++) {
+    addition += table[i]
+  }
+  return addition
+}
 /*
   Test 1
   Résultat attendu : 15

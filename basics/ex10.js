@@ -12,7 +12,21 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function shoppingList(tables) {
+  let liste = {}
+  let test
+  for(table of tables) {
+    for(product of table) {
+      if (liste[product] == undefined) {
+        liste[product] = 1
+      }
+      else {
+        liste[product] += 1
+      }
+    }
+  }
+  return liste
+}
 /*
   Test 1
   Résultat attendu : {

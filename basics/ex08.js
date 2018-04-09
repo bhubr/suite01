@@ -14,6 +14,20 @@
 */
 
 //  écrire votre code sous ce commentaire
+function isAllEven(table) {
+  let test = true
+  for(i = 0; i < table.length; i++) {
+    if(table[i] % 2 == 1) {
+      test = false
+    }
+  }
+  if(test == true) {
+    return 1
+  }
+  else if(test == false) {
+    return 0
+  }
+}
 
 /*
   Test 1

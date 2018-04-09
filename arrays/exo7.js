@@ -11,7 +11,28 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function splitStr(string, separator) {
+  let indexSeparator = []
+  let answer = []
+  for(i = 0; i < string.length; i++) {
+    if(string[i] == separator) {      
+        indexSeparator.push(i)
+    }
+  }
+  indexSeparator.push(string.length)
+  let start = 0
+  let word = ""
+  for(index of indexSeparator) {
+    for(j = start; j < index; j++) {
+      word += string[j]
+    }
+    answer.push(word)
+    start = index + 1
+    word = ""
+  }
+  console.log(answer)
+  return answer
+}
 /*
   Test 1
   Résultat attendu : ["Bonjour", "comment", "tu", "vas", "?", "ça", "va", "merci."]

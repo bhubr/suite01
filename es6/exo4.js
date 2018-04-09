@@ -11,7 +11,9 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function checkVehicles(table, match) {
+  return table.includes(match)
+}
 /*
   Test 1
   Résultat attendu : true

@@ -10,6 +10,10 @@
 */
 
 //  écrire votre code sous ce commentaire
+function findYellowFruit(table) {
+  const answer = table.find(fruit => fruit.color == "jaune")
+  return (answer == undefined ? "" : answer.name)
+}
 
 /*
   Test 1

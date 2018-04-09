@@ -12,19 +12,34 @@
 */
 
 //  écrire votre code sous ce commentaire
-const mergeArrays = (arr1, arr2) => [...arr1, ...arr2]
+function mergeArrays(table1, table2) {
+  let answer = []  
+  for(item of table1) {
+    // let link = table1.shift()
+    // answer.push(link)
+    // table1.push(link)
+    answer.push(item)
+  }
+  for(item of table2) {
+    // let link = table2.shift()
+    // answer.push(link)
+    // table2.push(link)
+    answer.push(item)
+  }
+  return answer
+}
 
 /*
   Test 1
   Résultat attendu : ["bonjour", "ça", "va?", 3, 4]
 */
-mergeArrays(["bonjour"], ["ça", "va?", 3, 4]);
+console.log(mergeArrays(["bonjour"], ["ça", "va?", 3, 4]));
 
 /*
   Test 2
   Résultat attendu : ["enchanté", "je", "m'appelle", "comment?"]
 */
-mergeArrays(["enchanté", "je"], ["m'appelle", "comment?"]);
+console.log(mergeArrays(["enchanté", "je"], ["m'appelle", "comment?"]));
 
 /* DO NOT TOUCH */
 module.exports = {

@@ -10,13 +10,15 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function getAllLastnames(table) {
+  const map = table.map(object => object.name == undefined ? "" : object.name)
+  return map
+}
 /*
   Test 1
   Résultat attendu : ["John", "Judith", "Julia"]
 */
-
-getAllLastnames([{name: 'John'}, {name: 'Judith'}, {name: 'Julia'}]);
+console.log(getAllLastnames([{name: 'John'}, {name: 'Judith'}, {name: 'Julia'}]));
 
 /*
   Test 2

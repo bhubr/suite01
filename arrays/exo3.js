@@ -8,7 +8,11 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function editStringAt(string, position, char) {
+  let part = string.split(string[position])
+  let answer = part[0] + char + part[1]
+  return answer
+}
 /*
   Test 1
   Résultat attendu : "Bondour"

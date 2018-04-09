@@ -10,7 +10,11 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function getTwoLastItems(string, pattern) {
+ let part = string.split(pattern).reverse().join(pattern)
+ let answer = part.split(pattern, 2).reverse()
+ return answer
+}
 /*
   Test 1
   Résultat attendu : ["Thursday", "Friday"]

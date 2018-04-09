@@ -6,7 +6,15 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function boostedEvenAddition(table) {
+  let addition = 0
+  for(nb of table) {
+    if(nb % 2 == 0) {
+      addition += nb
+    }
+  }
+  return addition
+}
 /*
   Test 1
   Résultat attendu : 10

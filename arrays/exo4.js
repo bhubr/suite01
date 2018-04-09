@@ -11,7 +11,15 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function searchOcc(table, match) {
+  let answer
+  for(i = 0; i < table.length; i++) {
+    if(match == table[i]) {
+      answer = i
+    }
+  }
+  return answer != undefined ? answer : -1
+}
 /*
   Test 1
   Résultat attendu : 2

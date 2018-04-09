@@ -10,7 +10,10 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function joinDates(table, pattern) {
+  let answer = table.join(pattern)
+  return answer
+}
 /*
   Test 1
   Résultat attendu : "18/05/2018"

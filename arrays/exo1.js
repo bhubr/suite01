@@ -11,7 +11,9 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function getCharAt(string, position) {
+  return string[position] != undefined ? string[position] : ""
+}
 /*
   Test 1
   Résultat attendu : "j"

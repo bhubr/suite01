@@ -10,7 +10,10 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function filterEvenNumbers(table) {
+  let answer = table.filter(pair => pair % 2 == 0)
+  return answer
+}
 /*
   Test 1
   Résultat attendu : [2, 6, 8]

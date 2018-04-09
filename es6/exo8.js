@@ -9,7 +9,16 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function verifyHumans(table) {
+  let height = []
+  for(person of table) {    
+    height.push(person.size.split("m").join(""))    
+  }
+  function isTall(tall) {
+    return tall > 160
+  }
+  return height.every(isTall)
+}
 /*
   Test 1
   Résultat attendu : true

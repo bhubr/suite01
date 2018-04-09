@@ -10,7 +10,14 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function sortMyWords(table) {
+  table.sort((a, b) => a.order - b.order)
+  let answer = []
+  for(word of table) {
+    answer.push(word.word)
+  }
+  return answer.join(" ")
+}
 /*
   Test 1
   Résultat attendu : "Wild Code School Bordeaux"
