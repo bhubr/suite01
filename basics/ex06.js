@@ -12,6 +12,21 @@
 
 //  écrire votre code sous ce commentaire
 
+function getHumanTypeByAge(age) {
+  if (age >= 12 && age < 18) {
+    return "ado"
+  }
+  else if (age >= 18 && age < 124) {
+    return "adulte"
+  }
+  else if (age < 12 && age >= 1) {
+    return "enfant"
+  }
+  else {
+    return "impossible... ou encore jamais vu"
+  }
+}
+
 /*
   Test 1
   Résultat attendu : "impossible... ou encore jamais vu"

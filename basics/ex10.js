@@ -13,6 +13,23 @@
 
 //  écrire votre code sous ce commentaire
 
+
+function shoppingList(panier) {
+  let list = {}
+  for (let i = 0; i < panier.length; i++) {
+    for (let p = 0; p < panier[i].length; p++) {
+      const produit = panier[i][p] 
+      if (list[produit] === undefined) {
+        list[produit] = 1
+      }
+      else {
+        list[produit] += 1
+      }
+    }
+  }
+  return list
+}
+
 /*
   Test 1
   Résultat attendu : {

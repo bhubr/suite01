@@ -9,6 +9,16 @@
 
 //  écrire votre code sous ce commentaire
 
+function isEven(nombre){
+  if (nombre % 2 == 0) {
+    return 1
+  } 
+  else {
+    return 0
+  }
+}
+
+
 /*
   Test 1
   Résultat attendu : 1

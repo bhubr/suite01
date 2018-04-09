@@ -13,6 +13,12 @@
 
 //  écrire votre code sous ce commentaire
 
+function addition(x, y){
+  return x += y
+}
+
+
+
 /*
   Test 1
   Résultat attendu : 15

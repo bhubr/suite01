@@ -11,6 +11,17 @@
 
 //  écrire votre code sous ce commentaire
 
+function sortMyWords(sentence) {
+  const resultat = sentence.sort(function (a, b) {
+    return a.order - b.order ;
+  })
+  const resultatFinal = []
+  for (object of resultat) {
+    resultatFinal.push(object.word)
+  }
+return resultatFinal.join(" ")
+}
+
 /*
   Test 1
   Résultat attendu : "Wild Code School Bordeaux"

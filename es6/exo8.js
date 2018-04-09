@@ -10,12 +10,30 @@
 
 //  écrire votre code sous ce commentaire
 
+// function verifyHumans(people) {
+//   const sizes = []
+//   for (let item of people){
+//     sizes.push(item.size.split("m").join("."))
+//   }
+//   const resultat = sizes.every(taille => taille > 1.60)
+//   return resultat
+// }
+
+function getPersonSize(person) {
+  return person.size.split("m").join(".")
+}
+
+function verifyHumans(people) {
+  return people.every(person => getPersonSize(person) > 1.60)
+}
+
 /*
   Test 1
-  Résultat attendu : true
+  Résultat attendu : trueperson
 */
 
-verifyHumans([{name: 'John', size: '1m80'}, {name: 'Patrick', size: '1m75'}, {name: 'Marie', size: '1m68'}]);
+
+console.log(verifyHumans([{name: 'John', size: '1m80'}, {name: 'Patrick', size: '1m75'}, {name: 'Marie', size: '1m68'}]));
 
 /*
   Test 2

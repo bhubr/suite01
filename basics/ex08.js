@@ -15,6 +15,21 @@
 
 //  écrire votre code sous ce commentaire
 
+
+array = []
+function isAllEven(array) {
+let somme = 0
+  for (let i = 0; i < array.length; i++) {
+    somme = somme + array[i]
+  }
+  if (somme % 2 == 0) {
+    return 1
+  }
+  else {
+    return 0
+  }
+}
+
 /*
   Test 1
   Résultat attendu : 0

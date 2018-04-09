@@ -11,13 +11,19 @@
 */
 
 //  écrire votre code sous ce commentaire
+function checkVehicles(brands, x) {
+  const vehicule = brands.includes(x)
+  return vehicule ? true : false
+}
+
+
 
 /*
   Test 1
   Résultat attendu : true
 */
 
-checkVehicles(["subaru", "volkswagen", "mercedes", "peugeot"], "mercedes");
+console.log(checkVehicles(["subaru", "volkswagen", "mercedes", "peugeot"], "mercedes"));
 
 /*
   Test 2

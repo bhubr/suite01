@@ -7,6 +7,16 @@
 
 //  écrire votre code sous ce commentaire
 
+function boostedEvenAddition(array) {
+  let resultat = 0
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2 == 0)
+      resultat = resultat + array[i]
+  }
+  return resultat
+}
+
+
 /*
   Test 1
   Résultat attendu : 10

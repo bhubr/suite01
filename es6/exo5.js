@@ -11,6 +11,15 @@
 
 //  écrire votre code sous ce commentaire
 
+function countTotalTimeSpent(times) {
+  const tableau = []
+  for (let item of times) {
+    tableau.push(item.time)
+  }
+  const total = tableau.reduce((accumulator, currentValue) => accumulator + currentValue)
+  return total
+}
+
 /*
   Test 1
   Résultat attendu : 65

@@ -11,6 +11,12 @@
 
 //  écrire votre code sous ce commentaire
 
+
+function filterEvenNumbers(numbers) {
+  const result = numbers.filter (number => number % 2 == 0)
+  return result
+}
+
 /*
   Test 1
   Résultat attendu : [2, 6, 8]

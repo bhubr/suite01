@@ -12,6 +12,7 @@
     pour afficher la valeur de retour de la fonction;
 */
 
+
 /*
     Déclaration de la fonction "returnParameter",
     prenant un paramètre "nb",
@@ -22,4 +23,9 @@ function returnParameter(nb) {
     return nb;
 }
 
+
+
 //  écrire votre code sous ce commentaire
+
+
+console.log(returnParameter(5))

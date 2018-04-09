@@ -11,6 +11,12 @@
 
 //  écrire votre code sous ce commentaire
 
+function joinDates(date, separator) {
+  const dateJoined = date.join(separator)
+  return dateJoined
+}
+
+
 /*
   Test 1
   Résultat attendu : "18/05/2018"

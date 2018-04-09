@@ -11,6 +11,11 @@
 
 //  écrire votre code sous ce commentaire
 
+function findYellowFruit(fruits) {
+  const result = fruits.find(fruit => fruit.color == 'jaune')
+  return result ? result.name : ""
+}
+
 /*
   Test 1
   Résultat attendu : "banane"
