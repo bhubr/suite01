@@ -10,20 +10,23 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function findYellowFruit(tableau) {
+  const jaune = tableau.find(objet => objet.color === 'jaune')
+  return jaune ? jaune.name : ""
+} 
 /*
   Test 1
   Résultat attendu : "banane"
 */
 
-findYellowFruit([{name: 'orange', color: 'orange'}, {name: 'banane', color: 'jaune'},{name: 'pomme', color: 'rouge'}]);
+console.log(findYellowFruit([{name: 'orange', color: 'orange'}, {name: 'banane', color: 'jaune'},{name: 'pomme', color: 'rouge'}]));
 
 /*
   Test 2
   Résultat attendu : ""
 */
 
-findYellowFruit([{name: 'orange', color: 'orange'}, {name: 'pomme', color: 'vert'}]);
+console.log(findYellowFruit([{name: 'orange', color: 'orange'}, {name: 'pomme', color: 'vert'}]));
 
 /* DO NOT TOUCH */
 module.exports = {

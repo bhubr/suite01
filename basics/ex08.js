@@ -14,20 +14,32 @@
 */
 
 //  écrire votre code sous ce commentaire
+let tableau = []
+function isAllEven(tableau) {
+  let nombre = 0
+  for (let i = 0; i < tableau.length; i++) {
+  nombre = nombre + tableau[i];}
+  if (nombre % 2 == 0) {
+    return 1; 
+  } else {
+    return 0;
+  }
+}
+  
 
 /*
   Test 1
   Résultat attendu : 0
 */
 
-isAllEven([4, 5, 6]);
+console.log(isAllEven([4, 5, 6]));
 
 /*
   Test 2
   Résultat attendu : 1
 */
 
-isAllEven([4, 4, 6, 8, 10, 12]);
+console.log(isAllEven([4, 4, 6, 8, 10, 12]));
 
 /* DO NOT TOUCH */
 module.exports = {

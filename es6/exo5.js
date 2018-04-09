@@ -10,13 +10,19 @@
 */
 
 //  écrire votre code sous ce commentaire
+	function countTotalTimeSpent(tableau) {
+		// Sinon recuperer et faire un for of 
+		const timetotal = tableau.reduce(
+			(accu, nombre) => accu + nombre.time, 0 )
+		return timetotal
+	}
 
 /*
   Test 1
   Résultat attendu : 65
 */
 
-countTotalTimeSpent([{name: 'Homer', time: 15}, {name: 'Bart', time: 28}, {name: 'Lisa', time: 22}]);
+console.log(countTotalTimeSpent([{name: 'Homer', time: 15}, {name: 'Bart', time: 28}, {name: 'Lisa', time: 22}]));
 
 /* DO NOT TOUCH */
 module.exports = {

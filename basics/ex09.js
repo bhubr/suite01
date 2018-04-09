@@ -6,13 +6,23 @@
 */
 
 //  écrire votre code sous ce commentaire
+let tableau = []
+function boostedEvenAddition(tableau) {
+	let nombre = 0
+	for (let i = 0; i < tableau.length;i++) {
+		if (tableau[i] % 2 == 0) 
+			nombre = nombre + tableau[i]
+		}
+		return nombre
+	
 
+}
 /*
   Test 1
   Résultat attendu : 10
 */
 
-boostedEvenAddition([4, 5, 6]);
+console.log(boostedEvenAddition([4, 5, 6]));
 
 /*
   Test 2

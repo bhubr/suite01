@@ -10,20 +10,30 @@
 */
 
 //  écrire votre code sous ce commentaire
+function sortMyWords(tableau) {
+  const resultat = tableau.sort(function (a, b) {
+  return a.order - b.order;
+})
+ const wordtrier = tableau.map(objet => objet.word)
 
+
+ const phrase = wordtrier.join(" ")
+ return phrase
+  
+}
 /*
   Test 1
   Résultat attendu : "Wild Code School Bordeaux"
 */
 
-sortMyWords([{order: 2, word: 'Code'}, {order: 4, word: 'Bordeaux'}, {order: 1, word: 'Wild'}, {order: 3, word: 'School'}]);
+console.log(sortMyWords([{order: 2, word: 'Code'}, {order: 4, word: 'Bordeaux'}, {order: 1, word: 'Wild'}, {order: 3, word: 'School'}]));
 
 /*
   Test 2
   Résultat attendu : "J'adore programmer en Javascript"
 */
 
-sortMyWords([{order: 4, word: 'Javascript'}, {order: 1, word: 'J\'adore'}, {order: 3, word: 'en'}, {order: 2, word: 'programmer'}]);
+//console.log(sortMyWords([{order: 4, word: 'Javascript'}, {order: 1, word: 'J\'adore'}, {order: 3, word: 'en'}, {order: 2, word: 'programmer'}]));
 
 /* DO NOT TOUCH */
 module.exports = {
