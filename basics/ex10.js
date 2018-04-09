@@ -6,13 +6,26 @@
 
     La fonction retourne un objet contenant:
         - comme clef le nom du produit rencontré
-        - comme valeur le nombre de fois qu'il à été rencontré
+        - comme valeur le nombre de fois qu'il a été rencontré
 
     Important -> l'ordre n'a aucune importance
 */
 
 //  écrire votre code sous ce commentaire
-
+function shoppingList(listePaniers){
+    let obj={}
+    for(let panier of shoppingList){
+        for(let fruit of panier){
+            if(obj[fruit] === undefined){
+                obj[fruit] = 1
+            }
+            else{
+                obj[fruit]++
+            }
+        }
+    }
+    return obj
+}
 /*
   Test 1
   Résultat attendu : {

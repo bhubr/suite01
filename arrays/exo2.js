@@ -8,7 +8,9 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function editArrayAt(arr,pos,val){
+  
+}
 /*
   Test 1
   Résultat attendu : ["bonjour", "ça", 5]

@@ -10,7 +10,10 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function getAllLastnames(lastnames){
+	for (let names of lastnames)
+		
+}
 /*
   Test 1
   Résultat attendu : ["John", "Judith", "Julia"]

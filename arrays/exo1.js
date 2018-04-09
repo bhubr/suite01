@@ -11,20 +11,24 @@
 */
 
 //  écrire votre code sous ce commentaire
+function getCharAt(str, num){
+  let lettres = str.split("")
+  return lettres[num]
+}
 
 /*
   Test 1
   Résultat attendu : "j"
 */
 
-getCharAt("bonjour", 3);
+console.log(getCharAt("bonjour", 3));
 
 /*
   Test 2
   Résultat attendu : "v"
 */
 
-getCharAt("comment ça va?", 11);
+console.log(getCharAt("comment ça va?", 11));
 
 /* DO NOT TOUCH */
 module.exports = {
