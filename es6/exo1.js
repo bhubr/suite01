@@ -10,6 +10,14 @@
 */
 
 //  écrire votre code sous ce commentaire
+function getAllLastnames(tableau) {
+  tableau.map ( element => element.name)
+    
+    
+  }
+return element.name
+  // body...
+}
 
 /*
   Test 1

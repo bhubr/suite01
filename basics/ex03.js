@@ -12,6 +12,12 @@
 */
 
 //  écrire votre code sous ce commentaire
+function addition(a, b) {
+  return (a+b)
+  // body...
+}
+
+console.log(addition(98766, 345678))
 
 /*
   Test 1

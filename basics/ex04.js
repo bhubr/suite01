@@ -8,7 +8,18 @@
 */
 
 //  écrire votre code sous ce commentaire
+function isEven(nb) {
+  if (nb % 2 == 0){
+    return nb = 1
+  }
+  
+  else  {
+    return nb = 0
+  }
+  }
+  // body...
 
+console.log(isEven(6))
 /*
   Test 1
   Résultat attendu : 1

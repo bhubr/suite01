@@ -6,6 +6,21 @@
 */
 
 //  écrire votre code sous ce commentaire
+function boostedAddition(tabl) {
+	// const nb = tabl.length
+	let somme = 0
+	for (nombre of tabl ){
+		somme += nombre
+	}
+
+	// for (i=0; i<nb; i++){
+	// 	somme += tabl[i]
+	// }
+	return somme;
+
+	// body...
+}
+
 
 /*
   Test 1

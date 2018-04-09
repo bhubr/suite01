@@ -6,6 +6,19 @@
 */
 
 //  écrire votre code sous ce commentaire
+function boostedEvenAddition(tabl) {
+	let somme = 0
+	for (nombre of tabl){
+		if (nombre % 2 == 0){
+		somme += nombre}
+	}
+	return somme
+}
+	
+
+	// body...
+
+
 
 /*
   Test 1

@@ -14,6 +14,36 @@
 */
 
 //  écrire votre code sous ce commentaire
+function isEven(nombre) {
+  if (nombre % 2 == 0){
+    return nombre = 1
+  }
+  
+  else  {
+    return nombre = 0
+  }
+  }
+
+function isAllEven(tabl) {
+  let test = true
+  for (nombre of tabl ){
+    if (isEven(nombre) === 0){
+      test = false
+    }
+ }
+  if (test === true ){
+    return 1
+  }
+  else{
+      return 0
+    }
+  }
+
+
+  // body...
+
+
+
 
 /*
   Test 1
