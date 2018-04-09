@@ -11,6 +11,11 @@
 */
 
 //  écrire votre code sous ce commentaire
+function checkVehicles (vehicule, recherche){
+  const marqueVehicule = vehicule.includes(recherche)
+  return marqueVehicule
+}
+
 
 /*
   Test 1

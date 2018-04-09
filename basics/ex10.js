@@ -12,6 +12,25 @@
 */
 
 //  écrire votre code sous ce commentaire
+function shoppingList(listePanier){
+    let produit = {};
+        for (let panier of listePanier) {
+
+
+        for(let item of panier ) {
+            if (produit[item] === undefined) {
+                produit[item] = 1
+            }
+            else {
+                produit[item] +=1
+            }
+        }
+
+    }
+        return produit
+}
+
+        
 
 /*
   Test 1
@@ -25,13 +44,13 @@
   }
 */
 
-shoppingList([
+console.log(shoppingList([
     ["orange", "orange", "kiwi", "ananas"],
     ["kiwi", "ananas", "banane", "prune"],
     ["orange", "orange", "orange", "orange"],
     ["orange", "orange", "kiwi", "kiwi"],
     ["prune", "banane", "pamplemousse", "ananas"]
-]);
+]));
 
 /* DO NOT TOUCH */
 module.exports = {

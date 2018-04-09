@@ -13,12 +13,18 @@
 
 //  écrire votre code sous ce commentaire
 
+function addition(nb,nb2) {
+  return nb += nb2
+}
+
+
 /*
   Test 1
   Résultat attendu : 15
 */
 
 addition(6, 9);
+console.log(addition(6, 9))
 
 /*
   Test 2
@@ -26,6 +32,7 @@ addition(6, 9);
 */
 
 addition(98766, 345678);
+console.log(addition(98766, 345678))
 
 /* DO NOT TOUCH */
 module.exports = {

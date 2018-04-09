@@ -10,6 +10,10 @@
 */
 
 //  écrire votre code sous ce commentaire
+function countTotalTimeSpent (eleve, time){
+	const tmpAppli = 
+
+}
 
 /*
   Test 1

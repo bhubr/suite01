@@ -10,7 +10,10 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function filterEvenNumbers(tableau){
+  const positif = tableau.filter(paire => paire % 2 == 0)
+  return positif
+}
 /*
   Test 1
   Résultat attendu : [2, 6, 8]

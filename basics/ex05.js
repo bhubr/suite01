@@ -8,6 +8,14 @@
 */
 
 //  écrire votre code sous ce commentaire
+function isEvenConcat(nb){
+  if (nb %2 == 0) 
+    return (nb + " est pair")
+
+  else 
+    return (nb + " est impair")
+  
+}
 
 /*
   Test 1
@@ -15,6 +23,7 @@
 */
 
 isEvenConcat(6);
+console.log(isEvenConcat(6))
 
 /*
   Test 2
@@ -22,6 +31,7 @@ isEvenConcat(6);
 */
 
 isEvenConcat(5);
+console.log(isEvenConcat(5))
 
 /* DO NOT TOUCH */
 module.exports = {

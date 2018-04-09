@@ -10,6 +10,18 @@
 */
 
 //  écrire votre code sous ce commentaire
+function findYellowFruit(fruit){
+  const fruitJaune = fruit.find(item => item.color == 'jaune')
+    if (fruitJaune == undefined){
+      return ""
+    }
+
+    else {
+      return fruitJaune.name
+    }
+
+}
+fruitJaune == undefined ? "" : fruitJaune.name
 
 /*
   Test 1
