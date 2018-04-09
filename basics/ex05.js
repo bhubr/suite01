@@ -8,7 +8,14 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function isEvenConcat(nb) {
+  if (nb % 2 == 1) {
+    return `${nb} est impair`
+  }
+  else {
+    return `${nb} est pair`
+  }
+}
 /*
   Test 1
   Résultat attendu : "6 est pair"

@@ -11,7 +11,19 @@
 */
 
 //  écrire votre code sous ce commentaire
+const getCharAt = (str, nb) => {
+  if (nb < 0 || nb >= str.length) {
+    return ""
+  }
+  else {
+    return str[nb]
+  }
 
+  // condition ? valeurSiConditionVraie : valeurSiConditionFausse
+
+  // return (nb >= 0 && nb < str.length) ? str[nb] : ""
+
+}
 /*
   Test 1
   Résultat attendu : "j"

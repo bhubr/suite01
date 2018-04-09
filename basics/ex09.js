@@ -6,7 +6,15 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function boostedEvenAddition(nb) {
+	let pair = 0
+	for (i = 0; i < nb.length; i++) {
+		if (nb[i] % 2 == 0) {
+			pair += nb[i]
+		}
+	}
+	return pair
+}
 /*
   Test 1
   Résultat attendu : 10

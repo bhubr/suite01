@@ -10,7 +10,10 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function filterEvenNumbers(AnArray) {
+  const pairs = AnArray.filter(nombre => nombre % 2 === 0)
+    return pairs
+}
 /*
   Test 1
   Résultat attendu : [2, 6, 8]

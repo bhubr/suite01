@@ -10,7 +10,15 @@
 */
 
 //  écrire votre code sous ce commentaire
+function findYellowFruit(AnArray) { 
+  const fruitJaune = AnArray.find(fruit => fruit.color === 'jaune')
+  return fruitJaune !== undefined ? fruitJaune.name : ''
+}
 
+// function findYellowFruit(AnArray) { 
+//   const fruitsJaunes = AnArray.filter(fruit => fruit.color === 'jaune')
+//   return fruitsJaunes.length > 0 ? fruitsJaunes[0].name : ''
+// }
 /*
   Test 1
   Résultat attendu : "banane"

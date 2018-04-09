@@ -10,6 +10,11 @@
 */
 
 //  écrire votre code sous ce commentaire
+function getAllLastnames(AnArray) { 
+  const nomTableau = AnArray.map(tableau => tableau.name === undefined ? "" : tableau.name)
+
+    return nomTableau
+}
 
 /*
   Test 1

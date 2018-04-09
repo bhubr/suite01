@@ -10,7 +10,13 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function countTotalTimeSpent(AnArray) {
+	const somme = AnArray.reduce(
+		(accumulateur , nombre) => accumulateur + nombre.time,
+		0
+	) 
+	return somme	
+}
 /*
   Test 1
   Résultat attendu : 65

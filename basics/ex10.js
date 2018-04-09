@@ -12,7 +12,37 @@
 */
 
 //  écrire votre code sous ce commentaire
+function shoppingList(listePaniers) {
+    let obj = {}
+    for (let panier of listePaniers) {
+        for (let fruit of panier) {
+            if (obj[fruit] === undefined) {
+                obj[fruit] = 1
+            }
+            else {
+                obj[fruit] += 1
+            }
+        }
+    }
+}
 
+
+
+// function shoppingList(panier) {
+//     let list = {}
+//         for (i = 0; i < panier.length; i++) {
+//             for (y = 0; y < panier[i].length; y++) {
+//                 const produit = panier[i][y]
+//                 if (list[produit] === undefined) {
+//                     list[produit] = 1
+//                 }
+//                 else {
+//                     list[produit] += 1
+//                 }
+//             }
+//         }
+//         return list
+// }
 /*
   Test 1
   Résultat attendu : {

@@ -14,7 +14,29 @@
 */
 
 //  écrire votre code sous ce commentaire
+function isEven(nb) {
+  if (nb % 2 == 0) {
+    return 1
+  }
+  else {
+    return 0
+  }
+}
 
+function isAllEven(nombre) {
+  let test = true
+  for (i = 0; i < nombre.length; i++) {
+    if (isEven(nombre[i]) == 0) {
+     test = false 
+    }
+  }
+  if (test == true) {
+    return 1
+  }
+  else {
+    return 0
+  }
+}
 /*
   Test 1
   Résultat attendu : 0

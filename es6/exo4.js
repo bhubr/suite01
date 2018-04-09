@@ -11,7 +11,10 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function checkVehicles(listeVehicules, test) {
+  const voiture = listeVehicules.includes(test)
+    return voiture
+}
 /*
   Test 1
   Résultat attendu : true

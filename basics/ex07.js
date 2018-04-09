@@ -6,7 +6,13 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function boostedAddition(nb) {
+	let add = 0
+	for (i = 0; i < nb.length; i++) {
+		add += nb[i]
+	}
+	return add
+}
 /*
   Test 1
   Résultat attendu : 15
