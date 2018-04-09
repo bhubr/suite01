@@ -8,7 +8,14 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function isEvenConcat(nb){
+  if(nb%2==0){
+    console.log(`${nb} est pair`)
+  }
+  else{
+    console.log(`${nb} est impair`)
+  }
+}
 /*
   Test 1
   Résultat attendu : "6 est pair"

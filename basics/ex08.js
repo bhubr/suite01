@@ -14,7 +14,24 @@
 */
 
 //  écrire votre code sous ce commentaire
+function isEven(nb){
+  if (nb%2 == 0){
+    return 1
+  }
+  else {
+    return 0
+  }
+}
 
+function isAllEven (array){
+  let resultat=0
+  for(let i=0; i<array.length; i++){
+    if (isEven(array[i])==0){
+      return 0    
+    }
+  }
+ return 1
+}
 /*
   Test 1
   Résultat attendu : 0

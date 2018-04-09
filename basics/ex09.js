@@ -7,6 +7,41 @@
 
 //  écrire votre code sous ce commentaire
 
+// function boostedEvenAddition (numbers){
+//   let filtered = numbers.filter(function envenNumbers(number){
+//     return number%2 ===0;
+//   })
+//   let somme=0
+//   for(i=0; i<filtered.length; i++){
+//     somme += filtered[i]
+//   }
+//   console.log(somme)
+//   return(somme)
+//   }
+
+
+function isEven(nb){
+  if (nb%2 == 0){
+    return 1
+  }
+  else {
+    return 0
+  }
+}
+
+function boostedEvenAddition(nb){
+  let somme=0
+  for(let i=0; i<nb.length; i++){
+    if (isEven(nb[i])==1){
+      somme += nb[i]   
+    }
+  }
+  console.log(somme)
+  return somme
+}
+
+
+
 /*
   Test 1
   Résultat attendu : 10

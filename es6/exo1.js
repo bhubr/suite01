@@ -11,6 +11,11 @@
 
 //  écrire votre code sous ce commentaire
 
+function getAllLastnames(arr){
+  console.log(arr.name)
+  return arr.name
+}
+const listNames=getAllLastnames.map(getAllLastnames)
 /*
   Test 1
   Résultat attendu : ["John", "Judith", "Julia"]

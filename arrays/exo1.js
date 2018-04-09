@@ -11,6 +11,10 @@
 */
 
 //  écrire votre code sous ce commentaire
+function getCharAt(str, position){
+  console.log(str [position])
+  return (str [position])
+}
 
 /*
   Test 1

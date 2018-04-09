@@ -12,6 +12,10 @@
 */
 
 //  écrire votre code sous ce commentaire
+function addition (nb1, nb2){
+  console.log (nb1+nb2)
+  return nb1 + nb2
+}
 
 /*
   Test 1

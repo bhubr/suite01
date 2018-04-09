@@ -8,7 +8,16 @@
 */
 
 //  écrire votre code sous ce commentaire
-
+function isEven(nb){
+  if (nb%2 == 0){
+    console.log(1)
+    return 1
+  }
+  else {
+    console.log(0)
+    return 0
+  }
+}
 /*
   Test 1
   Résultat attendu : 1

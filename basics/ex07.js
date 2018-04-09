@@ -6,6 +6,14 @@
 */
 
 //  écrire votre code sous ce commentaire
+function boostedAddition (array){
+  let somme=0
+  for(i=0; i<array.length; i++){
+    somme += array[i]
+  }
+  console.log(somme)
+  return somme
+}
 
 /*
   Test 1

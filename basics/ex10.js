@@ -13,7 +13,22 @@
 
 //  écrire votre code sous ce commentaire
 
-/*
+function shoppingList(listPaniers){
+  let obj = {}
+  for(let panier of listPaniers){
+    for(let fruit of panier){
+      if(obj[fruit] === undefined){
+        obj[fruit] = 1
+      }
+      else {
+        obj[fruit] = obj[fruit] + 1
+      }
+    }
+  }
+  console.log(obj)
+  return obj
+}
+/*  
   Test 1
   Résultat attendu : {
     "orange": 8,
