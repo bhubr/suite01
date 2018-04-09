@@ -12,6 +12,10 @@
 */
 
 //  écrire votre code sous ce commentaire
+function addition(nombre1, nombre2) {
+  return nombre1 + nombre2
+}
+
 
 /*
   Test 1
@@ -19,6 +23,7 @@
 */
 
 addition(6, 9);
+console.log (addition(6,9))
 
 /*
   Test 2
@@ -26,6 +31,7 @@ addition(6, 9);
 */
 
 addition(98766, 345678);
+console.log (addition(98766,345678))
 
 /* DO NOT TOUCH */
 module.exports = {

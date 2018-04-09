@@ -18,8 +18,11 @@
     qui retourne ce paramètre "nb";
 */
 
-function returnParameter(nb) {
-    return nb;
+function returnParameter(nombre) {
+    return nombre
 }
 
 //  écrire votre code sous ce commentaire
+
+const nombre = 5;
+console.log(nombre)

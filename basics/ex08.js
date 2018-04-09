@@ -14,6 +14,15 @@
 */
 
 //  écrire votre code sous ce commentaire
+function isAllEven(nombres) {
+  if (nombre % 2 == 0) {
+    return 1
+  }
+  if (nombre % 3 == 0) {
+    return 0
+  }
+}
+console.log(isAllEven)
 
 /*
   Test 1

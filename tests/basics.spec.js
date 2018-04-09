@@ -1,10 +1,10 @@
-xdescribe("Basics", () => {
+describe("Basics", () => {
 
   /* Import exercices */
-  // const exo2 = require('../basics/ex02');
-  // const exo3 = require('../basics/ex03');
-  // const exo4 = require('../basics/ex04');
-  // const exo5 = require('../basics/ex05');
+  const exo2 = require('../basics/ex02');
+  const exo3 = require('../basics/ex03');
+  const exo4 = require('../basics/ex04');
+  const exo5 = require('../basics/ex05');
   // const exo6 = require('../basics/ex06');
   // const exo7 = require('../basics/ex07');
   // const exo8 = require('../basics/ex08');
@@ -12,7 +12,7 @@ xdescribe("Basics", () => {
   // const exo10 = require('../basics/ex10');
 
   /* Test Exercice 2 */
-  xdescribe('Basics - Exo 2', () => {
+  describe('Basics - Exo 2', () => {
     it('should return 5', () => {
       expect(exo2.retParam(5)).toEqual(5);
     });
@@ -23,7 +23,7 @@ xdescribe("Basics", () => {
   });
 
   /* Test Exercice 3 */
-  xdescribe('Basics - Exo 3', () => {
+  describe('Basics - Exo 3', () => {
     it('should return 15', () => {
       expect(exo3.addition(6, 9)).toEqual(15);
     });
@@ -45,7 +45,7 @@ xdescribe("Basics", () => {
   });
 
   /* Test Exercice 5 */
-  xdescribe('Basics - Exo 5', () => {
+  describe('Basics - Exo 5', () => {
     it('should return "6 est pair"', () => {
       expect(exo5.isEvenConcat(6)).toEqual("6 est pair");
     });

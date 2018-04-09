@@ -13,14 +13,23 @@
 */
 
 //  écrire votre code sous ce commentaire
+function retParam(param) {
+  return param
+}
+
+
 
 /*
   Test 1
   Résultat attendu: "5"
 */
-retParam(5);
+console.log (retParam(5))
 
+console.log (retParam(45))
+
+console.log (retParam('sffr'))
 /* DO NOT TOUCH */
 module.exports = {
   retParam: retParam
 }
+
