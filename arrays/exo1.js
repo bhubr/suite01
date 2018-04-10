@@ -12,11 +12,15 @@
 
 //  écrire votre code sous ce commentaire
 
+function getCharAt(string, position){
+  const caractere = (position > 0 && position < string.length) ? string[position] : " "
+  return caractere
+}
+
 /*
   Test 1
   Résultat attendu : "j"
 */
-
 getCharAt("bonjour", 3);
 
 /*

@@ -1,7 +1,7 @@
-xdescribe("Arrays", () => {
+describe("Arrays", () => {
 
   /* Import exercices */
-  // const exo1 = require('../arrays/exo1');
+// const exo1 = require('../arrays/exo1');
   // const exo2 = require('../arrays/exo2');
   // const exo3 = require('../arrays/exo3');
   // const exo4 = require('../arrays/exo4');
@@ -10,7 +10,7 @@ xdescribe("Arrays", () => {
   // const exo7 = require('../arrays/exo7');
 
   /* Test Exercice 1 */
-  xdescribe('Arrays - Exo 1', () => {
+xdescribe('Arrays - Exo 1', () => {
     it('should return "j"', () => {
       const spyedFun = spyOn(String.prototype, "charAt").and.callThrough();
       expect(exo1.getCharAt("bonjour", 3)).toEqual("j");
