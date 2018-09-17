@@ -7,6 +7,14 @@
 
 //  écrire votre code sous ce commentaire
 
+function boostedAddition(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
+};
+
 /*
   Test 1
   Résultat attendu : 15
