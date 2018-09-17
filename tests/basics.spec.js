@@ -1,4 +1,4 @@
-xdescribe("Basics", () => {
+describe("Basics", () => {
 
   /* Import exercices */
   // const exo2 = require('../basics/ex02');
