@@ -3,7 +3,7 @@ describe("Arrays", () => {
   /* Import exercices */
   const exo1 = require('../arrays/exo1');
   const exo2 = require('../arrays/exo2');
-  // const exo3 = require('../arrays/exo3');
+  const exo3 = require('../arrays/exo3');
   // const exo4 = require('../arrays/exo4');
   // const exo5 = require('../arrays/exo5');
   // const exo6 = require('../arrays/exo6');
@@ -38,7 +38,7 @@ describe("Arrays", () => {
   });
 
   /* Test Exercice 3 */
-  xdescribe('Arrays - Exo 3', () => {
+  describe('Arrays - Exo 3', () => {
     it('should return "bondour"', () => {
       expect(exo3.editStringAt("Bonjour", 3, "d")).toEqual("Bondour");
     });

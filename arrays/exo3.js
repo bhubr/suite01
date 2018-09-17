@@ -9,6 +9,10 @@
 
 //  écrire votre code sous ce commentaire
 
+function editStringAt(str, position, char) {
+  return str.slice(0, position) + char + str.slice(position+1, str.length);
+};
+
 /*
   Test 1
   Résultat attendu : "Bondour"
