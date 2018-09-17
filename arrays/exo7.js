@@ -12,6 +12,24 @@
 
 //  écrire votre code sous ce commentaire
 
+function splitStr(str, occurence) {
+  result = [];
+  strTemp = "";
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] != occurence) {
+      strTemp += str[i] 
+    } else {
+      result.push(strTemp);
+      strTemp = "";
+    }
+    if (i === str.length-1) {
+      result.push(strTemp);
+    }
+  }
+  return result;
+};
+
+
 /*
   Test 1
   Résultat attendu : ["Bonjour", "comment", "tu", "vas", "?", "ça", "va", "merci."]

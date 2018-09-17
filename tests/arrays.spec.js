@@ -7,7 +7,7 @@ describe("Arrays", () => {
   const exo4 = require('../arrays/exo4');
   const exo5 = require('../arrays/exo5');
   const exo6 = require('../arrays/exo6');
-  // const exo7 = require('../arrays/exo7');
+  const exo7 = require('../arrays/exo7');
 
   /* Test Exercice 1 */
   describe('Arrays - Exo 1', () => {
@@ -94,7 +94,7 @@ describe("Arrays", () => {
   });
 
   /* Test Exercice 7 */
-  xdescribe('Arrays - Exo 7', () => {
+  describe('Arrays - Exo 7', () => {
     it('should return splitted string - 1', () => {
       const spyedFun = spyOn(String.prototype, "split").and.callThrough();
       expect(exo7.splitStr("Bonjour comment tu vas ? ça va merci.", " ")).toEqual(["Bonjour", "comment", "tu", "vas", "?", "ça", "va", "merci."]);
