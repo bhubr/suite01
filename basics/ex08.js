@@ -15,6 +15,20 @@
 
 //  écrire votre code sous ce commentaire
 
+function isEven(nbr) {
+  return (nbr % 2 === 0) ? 1 : 0;
+};
+
+function isAllEven(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (isEven(arr[i]) === 0) {
+      return 0;
+    }
+  }
+  return 1;
+};
+
+
 /*
   Test 1
   Résultat attendu : 0
