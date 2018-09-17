@@ -4,7 +4,7 @@ describe("Basics", () => {
 const exo2 = require('../basics/ex02');
 const exo3 = require('../basics/ex03');
 const exo4 = require('../basics/ex04');
-  // const exo5 = require('../basics/ex05');
+const exo5 = require('../basics/ex05');
   // const exo6 = require('../basics/ex06');
   // const exo7 = require('../basics/ex07');
   // const exo8 = require('../basics/ex08');
@@ -45,7 +45,7 @@ const exo4 = require('../basics/ex04');
   });
 
   /* Test Exercice 5 */
-  xdescribe('Basics - Exo 5', () => {
+  describe('Basics - Exo 5', () => {
     it('should return "6 est pair"', () => {
       expect(exo5.isEvenConcat(6)).toEqual("6 est pair");
     });

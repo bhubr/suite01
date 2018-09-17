@@ -9,6 +9,10 @@
 
 //  écrire votre code sous ce commentaire
 
+function isEvenConcat(nbr) {
+  return (nbr % 2 === 0) ? nbr + " est pair" : nbr + " est impair";
+};
+
 /*
   Test 1
   Résultat attendu : "6 est pair"
