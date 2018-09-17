@@ -8,7 +8,7 @@ const exo5 = require('../basics/ex05');
 const exo6 = require('../basics/ex06');
 const exo7 = require('../basics/ex07');
 const exo8 = require('../basics/ex08');
-  // const exo9 = require('../basics/ex09');
+const exo9 = require('../basics/ex09');
   // const exo10 = require('../basics/ex10');
 
   /* Test Exercice 2 */
@@ -101,7 +101,7 @@ const exo8 = require('../basics/ex08');
   });
 
   /* Test Exercice 9 */
-  xdescribe('Basics - Exo 2', () => {
+  describe('Basics - Exo 2', () => {
     it('should return 10', () => {
       expect(exo9.boostedEvenAddition([4, 5, 6])).toEqual(10);
     });
