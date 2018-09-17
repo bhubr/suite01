@@ -1,7 +1,7 @@
 describe("Basics", () => {
 
   /* Import exercices */
-  // const exo2 = require('../basics/ex02');
+const exo2 = require('../basics/ex02');
   // const exo3 = require('../basics/ex03');
   // const exo4 = require('../basics/ex04');
   // const exo5 = require('../basics/ex05');
@@ -12,7 +12,7 @@ describe("Basics", () => {
   // const exo10 = require('../basics/ex10');
 
   /* Test Exercice 2 */
-  xdescribe('Basics - Exo 2', () => {
+  describe('Basics - Exo 2', () => {
     it('should return 5', () => {
       expect(exo2.retParam(5)).toEqual(5);
     });
