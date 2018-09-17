@@ -23,7 +23,7 @@ describe("Arrays", () => {
   });
 
   /* Test Exercice 2 */
-  xdescribe('Arrays - Exo 2', () => {
+  describe('Arrays - Exo 2', () => {
     it('should return the array modified with "ça"', () => {
       let arr1 = ["bonjour", 4, 5];
       exo2.editArrayAt(arr1, 1, "ça");
