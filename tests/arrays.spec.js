@@ -4,7 +4,7 @@ describe("Arrays", () => {
   const exo1 = require('../arrays/exo1');
   const exo2 = require('../arrays/exo2');
   const exo3 = require('../arrays/exo3');
-  // const exo4 = require('../arrays/exo4');
+  const exo4 = require('../arrays/exo4');
   // const exo5 = require('../arrays/exo5');
   // const exo6 = require('../arrays/exo6');
   // const exo7 = require('../arrays/exo7');
@@ -49,7 +49,7 @@ describe("Arrays", () => {
   });
 
   /* Test Exercice 4 */
-  xdescribe('Arrays - Exo 4', () => {
+  describe('Arrays - Exo 4', () => {
     it('should return 2', () => {
       const spyedFun = spyOn(Array.prototype, "indexOf").and.callThrough();
       expect(exo4.searchOcc(["Salut", "ça", "va", "?"], "va")).toEqual(2);
