@@ -11,6 +11,17 @@
 
 //  écrire votre code sous ce commentaire
 
+function getAllLastnames(arr) {
+  let result = arr.map(obj => {
+    if (obj.name !== undefined) {
+      return obj.name
+    } else {
+      return ''
+    }
+  });
+  return result;
+};
+
 /*
   Test 1
   Résultat attendu : ["John", "Judith", "Julia"]

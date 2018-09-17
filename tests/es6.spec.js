@@ -1,7 +1,7 @@
-xdescribe("Es6", () => {
+describe("Es6", () => {
 
   /* Import exercices */
-  // const exo1 = require('../es6/exo1');
+const exo1 = require('../es6/exo1');
   // const exo2 = require('../es6/exo2');
   // const exo3 = require('../es6/exo3');
   // const exo4 = require('../es6/exo4');
@@ -12,7 +12,7 @@ xdescribe("Es6", () => {
   // const exo9 = require('../es6/exo9');
 
   /* Test Exercice 1 */
-  xdescribe('Es6 - Exo 1', () => {
+  describe('Es6 - Exo 1', () => {
     it('should return ["John", "Judith", "Julia"]', () => {
       const spyedFun = spyOn(Array.prototype, "map").and.callThrough();
       expect(exo1.getAllLastnames([{name: 'John'}, {name: 'Judith'}, {name: 'Julia'}])).toEqual(["John", "Judith", "Julia"]);
