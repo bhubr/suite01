@@ -6,7 +6,7 @@ describe("Arrays", () => {
   const exo3 = require('../arrays/exo3');
   const exo4 = require('../arrays/exo4');
   const exo5 = require('../arrays/exo5');
-  // const exo6 = require('../arrays/exo6');
+  const exo6 = require('../arrays/exo6');
   // const exo7 = require('../arrays/exo7');
 
   /* Test Exercice 1 */
@@ -80,8 +80,8 @@ describe("Arrays", () => {
     });
   });
 
-  /* Test Exercice 4 */
-  xdescribe('Arrays - Exo 6', () => {
+  /* Test Exercice 6 */
+  describe('Arrays - Exo 6', () => {
     it('should return sorted array - 1', () => {
       const spyedFun = spyOn(Array.prototype, "sort").and.callThrough();
       expect(exo6.sortNumbers([4, 3, 5, 2])).toEqual([2, 3, 4, 5]);
