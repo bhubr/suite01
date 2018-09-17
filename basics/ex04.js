@@ -9,6 +9,11 @@
 
 //  écrire votre code sous ce commentaire
 
+function isEven(nbr) {
+  return (nbr % 2 === 0) ? 1 : 0;
+};
+
+
 /*
   Test 1
   Résultat attendu : 1

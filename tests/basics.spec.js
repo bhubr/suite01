@@ -3,7 +3,7 @@ describe("Basics", () => {
   /* Import exercices */
 const exo2 = require('../basics/ex02');
 const exo3 = require('../basics/ex03');
-  // const exo4 = require('../basics/ex04');
+const exo4 = require('../basics/ex04');
   // const exo5 = require('../basics/ex05');
   // const exo6 = require('../basics/ex06');
   // const exo7 = require('../basics/ex07');
@@ -34,7 +34,7 @@ const exo3 = require('../basics/ex03');
   });
 
   /* Test Exercice 4 */
-  xdescribe('Basics - Exo 4', () => {
+  describe('Basics - Exo 4', () => {
     it('should return 1', () => {
       expect(exo4.isEven(6)).toEqual(1);
     });
