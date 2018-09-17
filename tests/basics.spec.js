@@ -9,7 +9,7 @@ const exo6 = require('../basics/ex06');
 const exo7 = require('../basics/ex07');
 const exo8 = require('../basics/ex08');
 const exo9 = require('../basics/ex09');
-  // const exo10 = require('../basics/ex10');
+const exo10 = require('../basics/ex10');
 
   /* Test Exercice 2 */
   describe('Basics - Exo 2', () => {
@@ -112,7 +112,7 @@ const exo9 = require('../basics/ex09');
   });
 
   /* Test Exercice 10 */
-  xdescribe('Basics - Exo 10', () => {
+  describe('Basics - Exo 10', () => {
     it('should return an object with the correct number of fruits', () => {
       expect(exo10.shoppingList([
           ["orange", "orange", "kiwi", "ananas"],

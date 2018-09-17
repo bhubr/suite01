@@ -13,6 +13,20 @@
 
 //  écrire votre code sous ce commentaire
 
+function shoppingList(arr) {
+  let result = {};
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr[i].length; j++) {
+      if (result[arr[i][j]] != undefined) {
+        result[arr[i][j]] += 1;
+      } else {
+        result[arr[i][j]] = 1;
+      }
+    }
+  }
+  return result;
+};
+
 /*
   Test 1
   Résultat attendu : {
