@@ -11,6 +11,10 @@
 
 //  écrire votre code sous ce commentaire
 
+function filterEvenNumbers(arr) {
+  return arr.filter(nbr => nbr % 2 === 0);
+};
+
 /*
   Test 1
   Résultat attendu : [2, 6, 8]
