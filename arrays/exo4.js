@@ -11,6 +11,15 @@
 */
 
 //  écrire votre code sous ce commentaire
+function searchOcc(arr, occurence) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === occurence) {
+      return i;
+    }
+  }
+  return -1;
+};
+
 
 /*
   Test 1

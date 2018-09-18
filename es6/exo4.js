@@ -12,6 +12,10 @@
 
 //  écrire votre code sous ce commentaire
 
+function checkVehicles(arr, str) {
+ return arr.includes(str) ? true : false;
+};
+
 /*
   Test 1
   Résultat attendu : true

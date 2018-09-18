@@ -11,6 +11,14 @@
 */
 
 //  écrire votre code sous ce commentaire
+function getCharAt (str, position) {
+  if (position < str.length) {
+    return str[position];
+  }
+  return [];
+};
+
+
 
 /*
   Test 1

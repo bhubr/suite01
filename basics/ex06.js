@@ -12,6 +12,22 @@
 
 //  écrire votre code sous ce commentaire
 
+function getHumanTypeByAge(nbr) {
+  switch(true) {
+    case (nbr < 12 && nbr >= 1):
+      return "enfant";
+      break;
+    case (nbr >= 12 && nbr < 18):
+      return "ado";
+      break;
+    case (nbr >= 18 && nbr < 124):
+      return "adulte";
+      break;
+    default:
+      return "impossible... ou encore jamais vu";
+  }
+};
+
 /*
   Test 1
   Résultat attendu : "impossible... ou encore jamais vu"

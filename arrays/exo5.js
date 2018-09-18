@@ -12,7 +12,13 @@
 */
 
 //  écrire votre code sous ce commentaire
-const mergeArrays = (arr1, arr2) => [...arr1, ...arr2]
+function mergeArrays(arr1, arr2) {
+  let result = arr1.slice();
+  for (let i = 0; i < arr2.length; i++) {
+    result.push(arr2[i]);
+  }
+  return result;
+}
 
 /*
   Test 1

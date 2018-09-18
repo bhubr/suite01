@@ -14,6 +14,10 @@
 
 //  écrire votre code sous ce commentaire
 
+function retParam(nbr) {
+  return nbr
+};
+
 /*
   Test 1
   Résultat attendu: "5"
