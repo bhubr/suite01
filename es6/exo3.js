@@ -11,6 +11,12 @@
 
 //  écrire votre code sous ce commentaire
 
+function findYellowFruit(arr) {
+  let result = arr.find(obj => obj.color === "jaune");
+  return (result !== undefined) ? result.name : "";
+ 
+};
+
 /*
   Test 1
   Résultat attendu : "banane"

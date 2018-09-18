@@ -3,7 +3,7 @@ describe("Es6", () => {
   /* Import exercices */
 const exo1 = require('../es6/exo1');
 const exo2 = require('../es6/exo2');
- //const exo3 = require('../es6/exo3');
+const exo3 = require('../es6/exo3');
   // const exo4 = require('../es6/exo4');
   // const exo5 = require('../es6/exo5');
   // const exo6 = require('../es6/exo6');
@@ -42,7 +42,7 @@ const exo2 = require('../es6/exo2');
   });
 
   /* Test Exercice 3 */
-  xdescribe('Es6 - Exo 3', () => {
+  describe('Es6 - Exo 3', () => {
     it('should return "banane"', () => {
       const spyedFun = spyOn(Array.prototype, "find").and.callThrough();
       const fruits = [{name: 'orange', color: 'orange'}, {name: 'banane', color: 'jaune'},{name: 'pomme', color: 'rouge'}];
