@@ -4,7 +4,7 @@ describe("Es6", () => {
 const exo1 = require('../es6/exo1');
 const exo2 = require('../es6/exo2');
 const exo3 = require('../es6/exo3');
-  // const exo4 = require('../es6/exo4');
+const exo4 = require('../es6/exo4');
   // const exo5 = require('../es6/exo5');
   // const exo6 = require('../es6/exo6');
   // const exo7 = require('../es6/exo7');
@@ -57,7 +57,7 @@ const exo3 = require('../es6/exo3');
   });
 
   /* Test Exercice 4 */
-  xdescribe('Es6 - Exo 4', () => {
+  describe('Es6 - Exo 4', () => {
     it('should return true', () => {
       const spyedFun = spyOn(Array.prototype, "includes").and.callThrough();
       const vehicules = ["subaru", "volkswagen", "mercedes", "peugeot"];
