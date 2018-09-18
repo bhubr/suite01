@@ -11,6 +11,10 @@
 
 //  écrire votre code sous ce commentaire
 
+function joinDates(arr, pattern) {
+  return arr.join(pattern);
+};
+
 /*
   Test 1
   Résultat attendu : "18/05/2018"
