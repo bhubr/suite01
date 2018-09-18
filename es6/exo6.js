@@ -11,6 +11,11 @@
 
 //  écrire votre code sous ce commentaire
 
+function getTwoLastItems(_str, _pattern) {
+  let arrTemp = _str.split(_pattern);
+  return arrTemp.slice(arrTemp.length-2, arrTemp.length);
+};
+
 /*
   Test 1
   Résultat attendu : ["Thursday", "Friday"]

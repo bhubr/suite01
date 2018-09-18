@@ -6,7 +6,7 @@ const exo2 = require('../es6/exo2');
 const exo3 = require('../es6/exo3');
 const exo4 = require('../es6/exo4');
 const exo5 = require('../es6/exo5');
-  // const exo6 = require('../es6/exo6');
+const exo6 = require('../es6/exo6');
   // const exo7 = require('../es6/exo7');
   // const exo8 = require('../es6/exo8');
   // const exo9 = require('../es6/exo9');
@@ -82,7 +82,7 @@ const exo5 = require('../es6/exo5');
   });
 
   /* Test Exercice 6 */
-  xdescribe('Es6 - Exo 6', () => {
+  describe('Es6 - Exo 6', () => {
     it('should return ["Thursday", "Friday"]', () => {
       const spyedFun = spyOn(String.prototype, "split").and.callThrough();
       expect(exo6.getTwoLastItems("Monday,Tuesday,Wednesday,Thursday,Friday", ",")).toEqual(["Thursday", "Friday"]);
