@@ -11,6 +11,11 @@
 
 //  écrire votre code sous ce commentaire
 
+function countTotalTimeSpent(arr) {
+  return arr.map(obj => {
+    return obj.time}).reduce((sum, current)=> sum + current,0);
+};
+
 /*
   Test 1
   Résultat attendu : 65
