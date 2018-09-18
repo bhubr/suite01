@@ -10,6 +10,10 @@
 
 //  écrire votre code sous ce commentaire
 
+function verifyHumans(arr) {
+  return arr.every(personne => personne.size >= '1m60')
+};
+
 /*
   Test 1
   Résultat attendu : true
