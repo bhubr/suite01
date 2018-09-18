@@ -11,6 +11,14 @@
 
 //  écrire votre code sous ce commentaire
 
+function sortMyWords(arr) {
+  return arr.sort(function (a, b) {
+    return a.order - b.order;
+  }).map(function(elem){
+    return elem.word;
+}).join(" ");
+};
+
 /*
   Test 1
   Résultat attendu : "Wild Code School Bordeaux"
